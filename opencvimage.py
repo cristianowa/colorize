@@ -89,8 +89,6 @@ class CvImage:
             for y in range(sz[1]):
                 colors.append(tuple(self.image[x][y]))
         colors = list(set(colors))
-        #colors = [ list(x) for x in colors]
-        print colors
         return colors
     def Replace(self, rep):
         sz = self.Size()
